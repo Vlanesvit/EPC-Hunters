@@ -467,7 +467,7 @@ body::after {
 	padding-right: 11px;
 }
 
-@media (min-width: 991.98px) {
+@media (max-width: 991.98px) {
 	.popup__text {
 		max-height: calc(100vh - 200px);
 	}
