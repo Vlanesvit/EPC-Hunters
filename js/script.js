@@ -31,7 +31,7 @@ initMenu()
 function initPopup() {
 	document.addEventListener('click', function (e) {
 		e.preventDefault();
-		
+
 		// Открытие модального окна
 		const openBtn = e.target.closest('[data-popup]');
 		if (openBtn) {
@@ -371,9 +371,14 @@ class Slider {
 
 
 const slider = new Slider('.banner__slider', {
-	slidesPerView: 1,
 	spaceBetween: 30,
 	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+		767.98: {
+			slidesPerView: 2,
+		},
 		991.98: {
 			destroy: true
 		}

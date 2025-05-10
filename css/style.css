@@ -261,6 +261,12 @@ p {
 	}
 }
 
+@media (any-hover: hover) {
+	.btn:hover {
+		transform: translateY(-5px);
+	}
+}
+
 .slider.slider-init {
 	position: relative;
 }
